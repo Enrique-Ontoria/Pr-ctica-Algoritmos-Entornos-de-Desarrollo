@@ -1,6 +1,6 @@
 package com.entornos.PascualEnriqueOntoriaBello.algoritmos;
 
-public class algoritmos {
+public abstract class algoritmos {
 	/*
 	 * Constructor sin parametros.
 	 */
@@ -51,6 +51,27 @@ public class algoritmos {
 		return factorial;
 	}
 	
+	/*
+	 * Metodo primo
+	 * @return Devuelve un booleano si el numero introducido es primo o no
+	 * @param Numero sobre el que se quiere averiguar si es primo o no.
+	 * @throws IllegalArgumentException si el numero introducido por parametro es negativo.
+	 */
+	public boolean primo(int numero) {
+		int divisores = 0;
+        if (numero < 2) {
+            throw new IllegalArgumentException("El número debe ser mayor o igual a 2.");
+        }
+        
+        for(int i = 1; i <= numero; i++) {
+        	if(numero%i == 0) divisores ++;
+        }
+        
+        return divisores == 2;
+    }
 }
+        
+        
+
 
 
