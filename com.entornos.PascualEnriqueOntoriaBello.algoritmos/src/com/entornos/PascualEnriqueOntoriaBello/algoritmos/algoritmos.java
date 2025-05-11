@@ -1,6 +1,6 @@
 package com.entornos.PascualEnriqueOntoriaBello.algoritmos;
 
-public  class algoritmos {
+public class algoritmos {
 	/*
 	 * Constructor sin parametros.
 	 */
@@ -8,8 +8,10 @@ public  class algoritmos {
 	}
 	
 	/*
-	 * Metodo fibonacci
-	 * @return devuelve numero de fibonacci del numero introducido por parametro
+	 * Metodo que calcula la secuencia de Fibonacci de la posicion indicada en la entrada del parametro.
+	 * @param numero de fibonacci apartir del cual se hace el calculo.
+	 * @return devuelve numero de fibonacci del numero introducido por parametro.
+	 * @throws IllegalArgumentException si el numero introducido por parametro es negativo.
 	 */
 	public int fibonacci (int numero) {
 		int a = 0;
@@ -27,8 +29,27 @@ public  class algoritmos {
 			
 		}
 		return c;
-		
     }
+	
+	
+	/*
+	 * Metodo que calcula el factorial de un numero que se le pasa como parametro
+	 * @param numero sobre el que se realiza el calculo
+	 * @return resultado de sacar factorial del parametro de entrada
+	 * @throws IllegalArgumentException si el numero introducido por parametro es negativo.
+	 */
+	public int factorial(int numero) {
+		int factorial = 1;
+		if (numero < 0) {
+            throw new IllegalArgumentException("El número no puede ser negativo para calcular el factorial.");
+        } 
+		
+		for(int i = 1; i<= numero; i++) {
+			factorial = factorial * i;
+			
+		}
+		return factorial;
+	}
 	
 }
 
