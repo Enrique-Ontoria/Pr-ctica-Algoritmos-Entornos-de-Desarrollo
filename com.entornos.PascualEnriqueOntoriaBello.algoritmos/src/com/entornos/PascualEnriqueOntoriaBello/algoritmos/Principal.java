@@ -1,19 +1,16 @@
 package com.entornos.PascualEnriqueOntoriaBello.algoritmos;
 
-public class Principal extends algoritmos {
+public class Principal {
 
 	public static void main(String[] args) {
-		algoritmos A1 = new algoritmos();
+		algoritmos A1 = new algoritmos() {};
 		// Creamos array
 		int numeros[] = new int[3];
 		int num = 0;
 		
 		//Damos valores aleatorios.
 		for(int i = 0; i < numeros.length; i++) {
-			
 			numeros[i] = (int)(Math.random()*(10 - 2 + 1)+2);
-
-			
 		}
 		
 		//Creamos array donde se guardaran los numeros de fibonacci
@@ -44,16 +41,7 @@ public class Principal extends algoritmos {
 			resultadoPrimo[i] = A1.primo(numeros[i]);
 		}
 		
-		
-		System.out.println(A1.primo(3));
-		
-		
-		
-		
-		
-		
-		
-		
+		System.out.println("Fin de test");
 		
 	}
 

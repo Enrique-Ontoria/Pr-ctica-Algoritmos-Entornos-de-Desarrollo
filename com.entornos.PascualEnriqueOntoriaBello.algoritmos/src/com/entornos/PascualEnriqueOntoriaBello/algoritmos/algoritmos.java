@@ -1,6 +1,6 @@
 package com.entornos.PascualEnriqueOntoriaBello.algoritmos;
 
-public class algoritmos {
+public abstract class algoritmos {
 	/*
 	 * Constructor sin parametros.
 	 */
